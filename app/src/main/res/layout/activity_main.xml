@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/food"
+            android:scaleType="fitXY"
+            />
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="35dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="6dp"
+            android:layout_marginRight="14dp"
+            android:paddingLeft="8dp"
+            android:paddingTop="8dp"
+            android:text="share"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:layout_width="59dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_backarrow"
+            android:paddingTop="16dp"
+            android:paddingLeft="8dp"
+
+            />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@color/light_gray">
+        <TextView
+            android:id="@+id/trending"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="Trending"
+            android:textSize="50sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:paddingLeft="12dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/trending"
+            android:layout_alignParentLeft="true"
+            android:text="20 restaurants"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+           android:paddingLeft="12dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="6dp"
+            android:textSize="23dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:text="Filter"
+            android:paddingRight="12dp"
+            android:textSize="20dp"
+            android:textColor="#2786e6"
+            android:textStyle="bold"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="6dp"/>
+    </RelativeLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        app:menu="@menu/bottom_nav"
+        android:layout_weight="1"/>
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

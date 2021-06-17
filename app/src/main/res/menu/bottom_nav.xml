@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_home"
+        android:title="Home"/>
+    <item
+        android:id="@+id/delivery"
+        android:icon="@drawable/ic_location"
+        android:title="Delivery"/>
+    <item
+        android:id="@+id/Bookmark"
+        android:icon="@drawable/ic_bookmark"
+        android:title="Bookmark"/>
+    <item
+        android:id="@+id/trophy"
+        android:icon="@drawable/ic_trophy"
+        android:title="Top Foodie"/>
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/ic_person"
+        android:title="Profile"/>
+
+
+</menu>
